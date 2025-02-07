@@ -31,5 +31,4 @@ USER jenkins
 # Expose Jenkins port (optional, if you want to access it externally)
 EXPOSE 8080
 
-# The default command to start Jenkins (from the base image)
-CMD ["jenkins"]
+
