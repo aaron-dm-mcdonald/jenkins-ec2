@@ -14,7 +14,7 @@ sudo usermod -aG docker ec2-user
 
 ############
 
-
+https://test-124655869758685.s3.us-east-1.amazonaws.com/jenkins_home_backup.tar.gz
 
 sudo docker pull aaronmcdonald/jenkins-class6:latest
-sudo docker run --name jenkins -d -p 8080:8080 -p 50000:50000 --restart=always aaronmcdonald/jenkins-class6:latest
+sudo docker run --name jenkins -d -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home --restart=always aaronmcdonald/jenkins-class6:latest
