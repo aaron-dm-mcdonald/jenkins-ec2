@@ -14,5 +14,7 @@ sudo usermod -aG docker ec2-user
 
 ############
 
-sudo docker pull jenkins/jenkins:lts
-sudo docker run --name jenkins -d -p 8080:8080 -p 50000:50000 --restart=always jenkins/jenkins:lts
+
+
+sudo docker pull aaronmcdonald/jenkins-class6:latest
+sudo docker run --name jenkins -d -p 8080:8080 -p 50000:50000 --restart=always aaronmcdonald/jenkins-class6:latest
